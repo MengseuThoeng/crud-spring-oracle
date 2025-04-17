@@ -1,6 +1,8 @@
 spring.application.name: oracle-thymleaf
 
 spring:
+  profiles:
+    active: dev
   datasource:
     url: jdbc:oracle:thin:@//34.124.163.170:1521/XEPDB1
     username: mengseu

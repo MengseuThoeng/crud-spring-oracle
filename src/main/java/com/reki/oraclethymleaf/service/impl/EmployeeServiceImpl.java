@@ -85,7 +85,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         List<Employee> employeeList = (List<Employee>) out.get("DATAOUTPUT");
 
         if (employeeList == null || employeeList.isEmpty()) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Employee not found");
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Employees.html not found");
         }
 
         return employeeList.get(0);
@@ -121,7 +121,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Map<String, String> deleteEmployee(Long id) {
         Employee existing = getEmployeeById(id);
         if (existing == null) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Employee not found");
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Employees.html not found");
         }
 
         SimpleJdbcCall jdbcCall = new SimpleJdbcCall(jdbcTemplate)
