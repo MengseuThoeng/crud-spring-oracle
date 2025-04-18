@@ -3,7 +3,7 @@ spring.application.name: oracle-thymleaf
 spring:
   datasource:
     url: jdbc:oracle:thin:@//34.124.163.170:1521/XEPDB1
-    username: mengseu
+    username: seu
     password: 123
     driver-class-name: oracle.jdbc.OracleDriver
 
